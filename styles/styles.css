@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.font-raleway {
+    font-family: "Raleway", sans-serif;
+  }
+
+.seat-style{
+  background-color: #F7F8F8;
+  padding : 10px 32px ; 
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button{
+  padding: 6px 12px ; 
+  border-radius: 10px;
+  background-color: #1DD100;
+  font-size: 14px;
+  font-weight: 700;
+}

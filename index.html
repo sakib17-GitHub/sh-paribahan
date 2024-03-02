@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH Paribahan</title>
+
+    <!-- Daisy UI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="styles/styles.css"> 
+
+</head>
+<body class="font-raleway max-w-6xl mx-auto">
+        <header class="my-4">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-2xl font-black">SH Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-[#1DD100] font-bold border-[#1DD100] bg-[#E8FAE5]">Bus
+                    <img src="images/bus-icon.png" alt="">
+                  </a>
+                </div>
+              </div>
+        </header>
+        <main>
+                <section class="banner">
+                    <div class="hero bg-cover bg-no-repeat lg:h-[400px] rounded-2xl" style="background-image:url(images/banner.png)">
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-screen-md">
+                            <h1 class="mb-5 text-5xl font-bold text-white">
+                                End To End Travel With
+                            </h1>
+                            <h1 class="mb-5 text-5xl font-bold text-[#1DD100]">SH Paribahan</h1>
+                            <p class="mb-5 text-white text-sm font-semibold">To Ensure Your Travel With Us Please Confirmed Your Ticket As Soon As Possible.</p>
+                            <button id="buy-tickets" class="btn btn-primary text-black bg-[#1DD100] border-none font-semibold">Buy Tickets</button>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+
+                <section class="best-offer">
+                        <div class="flex flex-col lg:flex-row gap-10 my-10 justify-center">
+                                  <div class="disscount-15 bg-[#FFBF0F] flex p-10 rounded-3xl justify-center items-center">
+                                    <div class="px-12">
+                                            <h1 class="text-black font-extrabold text-4xl">15% OFF</h1>
+                                            <h4 class="text-black text-sm font-semibold">On your next purchase</h4>
+                                            <p class="text-black text-sm">use by January 2024</p>
+                                    </div>
+                                    <div class="px-12 border-l-2 border-black border-dashed">
+                                            <h2 class="text-black font-bold text-3xl">NEW15</h2>
+                                            <p class="text-black text-sm">Coupon Code</p>
+                                    </div>
+                              </div>
+                              <div class="disscount-20 bg-[#F78C9C] flex p-10  rounded-3xl justify-center items-center">
+                                    <div class="px-12">
+                                            <h1 class="text-black font-extrabold text-4xl">20% OFF</h1>
+                                            <h4 class="text-black text-sm font-semibold">On your next purchase</h4>
+                                            <p class="text-black text-sm">use by January 2024</p>
+                                    </div>
+                                    <div class="px-12 border-l-2 border-black border-dashed">
+                                            <h2 class="text-black font-bold text-3xl">Couple 20</h2>
+                                            <p class="text-black text-sm">Coupon Code</p>
+                                    </div>
+          
+                              </div>
+                        </div>
+                        <div class="flex justify-center mb-5">
+                          <button id="buy-tickets" class="btn btn-primary text-[#1DD100] border-[#1DD100] bg-white font-semibold">See All Offers</button>
+                        </div>
+                </section>
+
+                <section class="details mb-20">
+                  <div class="text-center mt-10 mb-8">
+                        <h1 class="text-black text-5xl font-extrabold mb-2">SH Paribahan</h1>
+                      <p class=" text-sm ">Here you find your route details. Please check the given below before purchase your tickets.</p>
+                  </div>
+
+                  <div class="coach-details-container flex gap-10 flex-grow">
+                      <div class="coach-detail w-3/4">
+                              <div class="flex flex-grow gap-48">
+                                  <div class="flex flex-grow gap-5">
+                                        <div><img src="images/bus-logo.png" alt=""></div>
+                                        <div>
+                                          <h1>SH Paribahan</h1>
+                                          <p>Coach-009-WEB ! AC_Business</p>
+                                        </div>
+
+                                  </div>
+                                  <div>
+                                        <p class="flex gap-2">
+                                        <img src="images/seat-green.png" alt="">
+                                          <span>40</span>
+                                          Seats left
+                                        </p>
+                                  </div>
+                              </div>
+                              <div class="flex flex-grow justify-between">
+                                <p>Route</p>
+                                <p>Dhaka - Sylhet</p>
+                              </div>
+                              <div class="flex flex-grow justify-between">
+                                <p>Departure Time</p>
+                                <p>9:00 PM</p>
+                              </div>
+                              <div class="flex flex-grow justify-between">
+                                  <p>Boarding Point - Laxmipur</p>
+                                  <p>Dropping Point - Bogura</p>
+                                  <p>Est. Time - 11 Hour</p>
+                              </div>
+                      </div>
+                      <div class="ticket-detail w-1/4">
+                            <img src="images/fare.png" alt="">
+                            <h2>550 Taka</h2>
+                            <h4>Per Seat</h4>
+                      </div>
+
+                  </div>
+                </section>
+
+                <section class="select-your-seat-container flex">
+                  <div class="select-your-seat w-2/4">
+                    <h2>Select Your Seat</h2>
+                    <div class="flex flex-grow justify-between">
+                        <p class="flex gap-2"><img src="images/seat-gray.png">Available</p> 
+                        <p class="flex gap-2"><img src="images/seat-green-filled.png">Selected</p> 
+                    </div>
+                    <div class="flex flex-grow justify-between">
+                        <p></p>
+                        <p class="seat-style"><img src="images/wheel.png"></p>
+                    </div>
+
+                    <div class="seat-A flex flex-grow justify-between items-center my-5">
+                        <div>
+                          <p>A</p>
+                        </div>
+                        <div class="flex gap-5">
+                          <p class="seat-style">A1</p>
+                          <p class="seat-style">A2</p>
+                        </div>
+                        <div class="flex gap-5">
+                            <p class="seat-style">A3</p>
+                            <p class="seat-style">A4</p>
+                        </div>
+                    </div>
+
+                    <div class="seat-B flex flex-grow justify-between items-center my-5">
+                      <div>
+                        <p>B</p>
+                      </div>
+                      <div class="flex gap-5">
+                        <p class="seat-style">B1</p>
+                        <p class="seat-style">B2</p>
+                      </div>
+                      <div class="flex gap-5">
+                          <p class="seat-style">B3</p>
+                          <p class="seat-style">B4</p>
+                      </div>
+                  </div>
+
+                  </div>
+                  <div class="selected-seat w-2/4 border-l-gray-400 border-dashed border-l-2 ml-20 pl-20">
+                        <h1>Selected Seat</h1>
+                        <div class="selected-seat-details">
+                              <div class="seat-class-price flex justify-between">
+                                  <p>Seat</p>
+                                  <p>Class</p>
+                                  <p>Price</p>
+                              </div>
+                              <div class="flex justify-between">
+                                <h1>Total Price</h1>
+                                <h1>BDT <span>00</span></h1>
+                              </div>
+                              <div>
+                                    <label class="input input-bordered flex items-center gap-2 ">
+                                      <input type="text" class="grow" placeholder="Search" />
+                                      <div class="">
+                                        <button class="button">Optional</button>
+                                      </div>
+                                    </label>
+                              </div>
+
+                              <div class="flex justify-between">
+                                <h1>Grand Total</h1>
+                                <h1>BDT <span>00</span></h1>
+                              </div>
+
+                              <div>
+                                <form action="">
+                                  <h1> Passengers Name *</h1>
+                                  <label class="input input-bordered flex items-center  gap-2">
+                                    <input type="text" class="grow" placeholder="Enter Your Name" required />
+                                  </label>
+
+                                  <h1>Phone Number *</h1>
+                                  <label class="input input-bordered flex items-center gap-2">
+                                    <input type="text" class="grow" placeholder="Enter Your Phone Number" required/>
+                                  </label>
+
+                                  <h1>Email ID</h1>
+                                  <label class="input input-bordered flex items-center gap-2">
+                                    <input type="email" class="grow" placeholder="Enter Your Email ID" />
+                                  </label>
+
+                                  <button class="button w-full my-5 py-3">Next</button>
+                                </form>
+                              </div>
+                        </div>
+                  </div>
+                  
+                </section>
+        </main>
+        <footer>
+
+        </footer>
+
+</body>
+</html>
