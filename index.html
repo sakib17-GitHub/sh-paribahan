@@ -55,7 +55,7 @@
                             </h1>
                             <h1 class="mb-5 text-5xl font-bold text-[#1DD100]">SH Paribahan</h1>
                             <p class="mb-5 text-white text-sm font-semibold">To Ensure Your Travel With Us Please Confirmed Your Ticket As Soon As Possible.</p>
-                            <button id="buy-tickets" class="btn btn-primary text-black bg-[#1DD100] border-none font-semibold">Buy Tickets</button>
+                            <button id="buy-tickets" onclick="sawSection ()" class="btn btn-primary text-black bg-[#1DD100] border-none font-semibold">Buy Tickets</button>
                           </div>
                         </div>
                       </div>
@@ -92,149 +92,239 @@
                         </div>
                 </section>
 
-                <section class="details mb-20">
-                  <div class="text-center mt-10 mb-8">
-                        <h1 class="text-black text-5xl font-extrabold mb-2">SH Paribahan</h1>
-                      <p class=" text-sm ">Here you find your route details. Please check the given below before purchase your tickets.</p>
-                  </div>
-
-                  <div class="coach-details-container flex gap-10 flex-grow">
-                      <div class="coach-detail w-3/4">
-                              <div class="flex flex-grow gap-48">
-                                  <div class="flex flex-grow gap-5">
-                                        <div><img src="images/bus-logo.png" alt=""></div>
-                                        <div>
-                                          <h1>SH Paribahan</h1>
-                                          <p>Coach-009-WEB ! AC_Business</p>
-                                        </div>
-
-                                  </div>
-                                  <div>
-                                        <p class="flex gap-2">
-                                        <img src="images/seat-green.png" alt="">
-                                          <span>40</span>
-                                          Seats left
-                                        </p>
-                                  </div>
-                              </div>
-                              <div class="flex flex-grow justify-between">
-                                <p>Route</p>
-                                <p>Dhaka - Sylhet</p>
-                              </div>
-                              <div class="flex flex-grow justify-between">
-                                <p>Departure Time</p>
-                                <p>9:00 PM</p>
-                              </div>
-                              <div class="flex flex-grow justify-between">
-                                  <p>Boarding Point - Laxmipur</p>
-                                  <p>Dropping Point - Bogura</p>
-                                  <p>Est. Time - 11 Hour</p>
-                              </div>
-                      </div>
-                      <div class="ticket-detail w-1/4">
-                            <img src="images/fare.png" alt="">
-                            <h2>550 Taka</h2>
-                            <h4>Per Seat</h4>
-                      </div>
-
-                  </div>
-                </section>
-
-                <section class="select-your-seat-container flex">
-                  <div class="select-your-seat w-2/4">
-                    <h2>Select Your Seat</h2>
-                    <div class="flex flex-grow justify-between">
-                        <p class="flex gap-2"><img src="images/seat-gray.png">Available</p> 
-                        <p class="flex gap-2"><img src="images/seat-green-filled.png">Selected</p> 
+                <section id="sh-paribahan">
+                  <section id="details" class="mb-20">
+                    <div class="text-center mt-10 mb-8">
+                          <h1 class="text-black text-5xl font-extrabold mb-2">SH Paribahan</h1>
+                        <p class=" text-sm ">Here you find your route details. Please check the given below before purchase your tickets.</p>
                     </div>
-                    <div class="flex flex-grow justify-between">
-                        <p></p>
-                        <p class="seat-style"><img src="images/wheel.png"></p>
+  
+                    <div class="coach-details-container flex gap-10 flex-grow">
+                        <div class="coach-detail w-3/4">
+                                <div class="flex flex-grow gap-48">
+                                    <div class="flex flex-grow gap-5">
+                                          <div><img src="images/bus-logo.png" alt=""></div>
+                                          <div>
+                                            <h1>SH Paribahan</h1>
+                                            <p>Coach-009-WEB ! AC_Business</p>
+                                          </div>
+  
+                                    </div>
+                                    <div>
+                                          <p class="flex gap-2">
+                                          <img src="images/seat-green.png" alt="">
+                                            <span ID="seat-left">32</span>
+                                            Seats left
+                                          </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-grow justify-between">
+                                  <p>Route</p>
+                                  <p>Dhaka - Sylhet</p>
+                                </div>
+                                <div class="flex flex-grow justify-between">
+                                  <p>Departure Time</p>
+                                  <p>9:00 PM</p>
+                                </div>
+                                <div class="flex flex-grow justify-between">
+                                    <p>Boarding Point - Laxmipur</p>
+                                    <p>Dropping Point - Bogura</p>
+                                    <p>Est. Time - 11 Hour</p>
+                                </div>
+                        </div>
+                        <div class="ticket-detail w-1/4">
+                              <img src="images/fare.png" alt="">
+                              <h2>550 Taka</h2>
+                              <h4>Per Seat</h4>
+                        </div>
+  
                     </div>
-
-                    <div class="seat-A flex flex-grow justify-between items-center my-5">
+                  </section>
+  
+                  <section id="select-your-seat-container" class="flex">
+                    <div class="select-your-seat w-2/4">
+                      <h2>Select Your Seat</h2>
+                      <div class="flex flex-grow justify-between">
+                          <p class="flex gap-2"><img src="images/seat-gray.png">Available</p> 
+                          <p class="flex gap-2"><img src="images/seat-green-filled.png">Selected</p> 
+                      </div>
+                      <div class="flex flex-grow justify-between">
+                          <p></p>
+                          <p class="wheel"><img src="images/wheel.png"></p>
+                      </div>
+  
+                      <div class="seat-A flex flex-grow justify-between items-center my-5">
+                          <div>
+                            <p>A</p>
+                          </div>
+                          <div class="flex gap-5">
+                            <button class="seat">A1</button>
+                            <button class="seat">A2</button>
+                          </div>
+                          <div class="flex gap-5">
+                              <button class="seat">A3</button>
+                              <button class="seat">A4</button>
+                          </div>
+                      </div>
+  
+                      <div class="seat-B flex flex-grow justify-between items-center my-5">
                         <div>
-                          <p>A</p>
+                          <p>B</p>
                         </div>
                         <div class="flex gap-5">
-                          <p class="seat-style">A1</p>
-                          <p class="seat-style">A2</p>
+                          <button class="seat">B1</button>
+                          <button class="seat">B2</button>
                         </div>
                         <div class="flex gap-5">
-                            <p class="seat-style">A3</p>
-                            <p class="seat-style">A4</p>
+                            <button class="seat">B3</button>
+                            <button class="seat">B4</button>
                         </div>
                     </div>
 
-                    <div class="seat-B flex flex-grow justify-between items-center my-5">
+                    <div class="seat-C flex flex-grow justify-between items-center my-5">
                       <div>
-                        <p>B</p>
+                        <p>C</p>
                       </div>
                       <div class="flex gap-5">
-                        <p class="seat-style">B1</p>
-                        <p class="seat-style">B2</p>
+                        <button class="seat">C1</button>
+                        <button class="seat">C2</button>
                       </div>
                       <div class="flex gap-5">
-                          <p class="seat-style">B3</p>
-                          <p class="seat-style">B4</p>
+                          <button class="seat">C3</button>
+                          <button class="seat">C4</button>
                       </div>
                   </div>
 
+                  <div class="seat-D flex flex-grow justify-between items-center my-5">
+                    <div>
+                      <p>D</p>
+                    </div>
+                    <div class="flex gap-5">
+                      <button class="seat">D1</button>
+                      <button class="seat">D2</button>
+                    </div>
+                    <div class="flex gap-5">
+                        <button class="seat">D3</button>
+                        <button class="seat">D4</button>
+                    </div>
+                </div>
+
+                <div class="seat-E flex flex-grow justify-between items-center my-5">
+                  <div>
+                    <p>E</p>
                   </div>
-                  <div class="selected-seat w-2/4 border-l-gray-400 border-dashed border-l-2 ml-20 pl-20">
-                        <h1>Selected Seat</h1>
-                        <div class="selected-seat-details">
-                              <div class="seat-class-price flex justify-between">
-                                  <p>Seat</p>
-                                  <p>Class</p>
-                                  <p>Price</p>
-                              </div>
-                              <div class="flex justify-between">
-                                <h1>Total Price</h1>
-                                <h1>BDT <span>00</span></h1>
-                              </div>
-                              <div>
-                                    <label class="input input-bordered flex items-center gap-2 ">
-                                      <input type="text" class="grow" placeholder="Search" />
-                                      <div class="">
-                                        <button class="button">Optional</button>
-                                      </div>
+                  <div class="flex gap-5">
+                    <button class="seat">E1</button>
+                    <button class="seat">E2</button>
+                  </div>
+                  <div class="flex gap-5">
+                      <button class="seat">E3</button>
+                      <button class="seat">E4</button>
+                  </div>
+                </div>
+
+                <div class="seat-F flex flex-grow justify-between items-center my-5">
+                  <div>
+                    <p>F</p>
+                  </div>
+                  <div class="flex gap-5">
+                    <button class="seat">F1</button>
+                    <button class="seat">F2</button>
+                  </div>
+                  <div class="flex gap-5">
+                      <button class="seat">F3</button>
+                      <button class="seat">F4</button>
+                  </div>
+              </div>
+
+              <div class="seat-G flex flex-grow justify-between items-center my-5">
+                <div>
+                  <p>G</p>
+                </div>
+                <div class="flex gap-5">
+                  <button class="seat">G1</button>
+                  <button class="seat">G2</button>
+                </div>
+                <div class="flex gap-5">
+                    <button class="seat">G3</button>
+                    <button class="seat">G4</button>
+                </div>
+            </div>
+
+            <div class="seat-H flex flex-grow justify-between items-center my-5">
+              <div>
+                <p>H</p>
+              </div>
+              <div class="flex gap-5">
+                <button class="seat">H1</button>
+                <button class="seat">H2</button>
+              </div>
+              <div class="flex gap-5">
+                  <button class="seat">H3</button>
+                  <button class="seat">H4</button>
+              </div>
+          </div>
+
+                    </div>
+                    <div class="selected-seat w-2/4 border-l-gray-400 border-dashed border-l-2 ml-20 pl-20">
+                          <h1>Selected Seat</h1>
+                          <div class="selected-seat-details">
+                                <div class="flex justify-between">
+                                    <p>Seat <span id="seat-count">00</span></p>
+                                    <p>Class</p>
+                                    <p>Price</p>
+                                </div>
+                                <div id="selected-seat-container"></div>
+                                <hr>
+                                <div class="flex justify-between">
+                                  <h1>Total Price</h1>
+                                  <h1>BDT <span id="total-price">00</span></h1>
+                                </div>
+                                <div id="coupon-fill-container">
+                                      <label class="input input-bordered flex items-center gap-2 ">
+                                        <input id="coupon-fill" type="text" class="grow" placeholder="Search" />
+                                        <div class="">
+                                          <button class="button" onClick="grandTotal('apply-coupon')">Apply</button>
+                                        </div>
+                                      </label>
+                                </div>
+  
+                                <div class="flex justify-between">
+                                  <h1>Grand Total</h1>
+                                  <h1>BDT <span id="grand-total">00</span></h1>
+                                </div>
+  
+                                <div>
+                                  <form action="">
+                                    <h1> Passengers Name *</h1>
+                                    <label class="input input-bordered flex items-center  gap-2">
+                                      <input type="text" class="grow" placeholder="Enter Your Name" required />
                                     </label>
-                              </div>
+  
+                                    <h1>Phone Number *</h1>
+                                    <label class="input input-bordered flex items-center gap-2">
+                                      <input type="text" class="grow" placeholder="Enter Your Phone Number" required/>
+                                    </label>
+  
+                                    <h1>Email ID</h1>
+                                    <label class="input input-bordered flex items-center gap-2">
+                                      <input type="email" class="grow" placeholder="Enter Your Email ID" />
+                                    </label>
+                                      <button id="next-btn" class="button w-full my-5 py-3">Next</button> 
+                                      
+                                  </form>
+                                  
 
-                              <div class="flex justify-between">
-                                <h1>Grand Total</h1>
-                                <h1>BDT <span>00</span></h1>
-                              </div>
-
-                              <div>
-                                <form action="">
-                                  <h1> Passengers Name *</h1>
-                                  <label class="input input-bordered flex items-center  gap-2">
-                                    <input type="text" class="grow" placeholder="Enter Your Name" required />
-                                  </label>
-
-                                  <h1>Phone Number *</h1>
-                                  <label class="input input-bordered flex items-center gap-2">
-                                    <input type="text" class="grow" placeholder="Enter Your Phone Number" required/>
-                                  </label>
-
-                                  <h1>Email ID</h1>
-                                  <label class="input input-bordered flex items-center gap-2">
-                                    <input type="email" class="grow" placeholder="Enter Your Email ID" />
-                                  </label>
-
-                                  <button class="button w-full my-5 py-3">Next</button>
-                                </form>
-                              </div>
-                        </div>
-                  </div>
-                  
+                                </div>
+                          </div>
+                    </div>
+                    
+                  </section>
                 </section>
         </main>
         <footer>
 
         </footer>
-
+        <script src="scripts/script.js"></script>
 </body>
 </html>

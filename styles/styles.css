@@ -5,7 +5,7 @@
     font-family: "Raleway", sans-serif;
   }
 
-.seat-style{
+.seat , .wheel{
   background-color: #F7F8F8;
   padding : 10px 32px ; 
   border-radius: 10px;
