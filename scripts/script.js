@@ -68,6 +68,16 @@ function totalPrice (){
     document.getElementById('total-price').innerText = sum ;  
 }
 
+document.getElementById('apply').addEventListener('click' , function(){
+    if(parseInt(document.getElementById('seat-count').innerText)>3){
+        grandTotal('apply-coupon');
+    }
+    else{
+        alert('To Get A Valid Coupon You Have To Purchase Atleast 4 tickets')
+        return;
+    }
+})
+
 
 function grandTotal (coupon){
 

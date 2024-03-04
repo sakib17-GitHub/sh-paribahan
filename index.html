@@ -14,7 +14,7 @@
 
 </head>
 <body class="font-raleway">
-        <header id="header" class="my-4 max-w-6xl mx-auto">
+        <header id="header" class="my-4 lg:max-w-6xl mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -45,7 +45,7 @@
                 </div>
               </div>
         </header>
-        <main class="max-w-6xl mx-auto">
+        <main class="lg:max-w-6xl mx-auto">
                 <section class="banner">
                     <div class="hero bg-cover bg-no-repeat lg:h-[400px] rounded-2xl" style="background-image:url(images/banner.png)">
                         <div class="hero-content text-center text-neutral-content">
@@ -62,7 +62,7 @@
                 </section>
 
                 <section class="best-offer">
-                        <div class="flex flex-col lg:flex-row gap-10 my-10 justify-center">
+                        <div class="flex flex-col lg:flex-row lg:gap-10 lg:my-10 justify-center">
                                   <div class="disscount-15 bg-[#FFBF0F] flex p-10 rounded-3xl justify-center items-center">
                                     <div class="px-12">
                                             <h1 class="text-black font-extrabold text-4xl">15% OFF</h1>
@@ -306,7 +306,7 @@
                                       <label class="input input-bordered flex items-center gap-2 ">
                                         <input id="coupon-fill" type="text" class="grow" placeholder="Have any coupon?" />
                                         <div class="">
-                                          <button class="button" onClick="grandTotal('apply-coupon')">Apply</button>
+                                          <button class="button" id="apply">Apply</button>
                                         </div>
                                       </label>
                                 </div>
@@ -368,7 +368,7 @@
                 </section>
         </main>
         <footer class="bg-black">
-               <div class="footer-container max-w-6xl mx-auto text-white mt-10 py-20">
+               <div class="footer-container lg:max-w-6xl mx-auto text-white mt-10 py-20">
                       <div class="flex justify-between items-center">
                           <div>
                                   <h1 class="text-4xl font-bold mb-2">SH-Ticket</h1>
