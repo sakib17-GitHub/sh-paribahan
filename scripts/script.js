@@ -1,5 +1,5 @@
-function sawSection (){  
- document.getElementById("sh-paribahan").scrollIntoView({behavior: 'smooth'});
+function sawSection (id){  
+ document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 
 }
 
@@ -76,12 +76,14 @@ function grandTotal (coupon){
         if(couponCode === "NEW15"){
             const total = parseInt(document.getElementById('total-price').innerText);
             const discount = total * .15 ; 
+            document.getElementById('discount-price').innerText = discount;
             document.getElementById('grand-total').innerText = total - discount ; 
             document.getElementById('coupon-fill-container').classList.add('hidden');
         }
         else if(couponCode === "Couple 20"){
             const total = parseInt(document.getElementById('total-price').innerText);
             const discount = total * .2 ; 
+            document.getElementById('discount-price').innerText = discount;
             document.getElementById('grand-total').innerText = total - discount ;
             document.getElementById('coupon-fill-container').classList.add('hidden');
         }
@@ -97,3 +99,28 @@ function grandTotal (coupon){
         document.getElementById('grand-total').innerText = total ; 
     }
 }
+
+
+document.getElementById('next-btn').addEventListener('click' , function(){
+    const input = document.getElementById('phone-number');
+    const seatCount = parseInt(document.getElementById('seat-count').innerText);
+    if ( input && input.value && seatCount>0) {
+        my_modal_1.showModal();
+        document.getElementById('phone-number').value = "";
+      }
+    else if(input.value === ""  && seatCount>0){
+                alert('Please Give The Phone Number');
+                return;
+    }
+    else if(input.value && seatCount<1){
+        alert('Please Select At least One Seat');
+        return;
+    }
+    else{
+        alert('Please Select At Least One Seat And Give The Phone Number.')
+        return;
+    }
+
+})
+
+
